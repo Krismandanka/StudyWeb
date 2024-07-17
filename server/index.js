@@ -62,10 +62,10 @@ cloudnairyconnect();
 // })
 
 // app.use(limiter)
-const{ rateLimiter} = require("./middlewares/rateLimitRedis.js")
+// const{ rateLimiter} = require("./middlewares/rateLimitRedis.js")
 
-// app.use(limiter)
-app.use(rateLimiter(2,20));
+// // app.use(limiter)
+// app.use(rateLimiter(2,20));
 
 app.use('/api/v1/auth',userRoutes);
 

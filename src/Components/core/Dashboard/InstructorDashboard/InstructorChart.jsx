@@ -25,7 +25,7 @@ export default function InstructorChart({ courses }) {
     labels: courses.map((course) => course.courseName),
     datasets: [
       {
-        data: courses.map((course) => course.totalStudentsEnrolled),
+        data: courses.map((course) => course.totalStudents),
         backgroundColor: generateRandomColors(courses.length),
       },
     ],
@@ -36,7 +36,7 @@ export default function InstructorChart({ courses }) {
     labels: courses.map((course) => course.courseName),
     datasets: [
       {
-        data: courses.map((course) => course.totalAmountGenerated),
+        data: courses.map((course) => course.totalRevenue),
         backgroundColor: generateRandomColors(courses.length),
       },
     ],
